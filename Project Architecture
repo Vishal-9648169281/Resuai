@@ -1,0 +1,27 @@
+ResuAI/
+│
+├── backend/
+│   ├── app.py / main.py                # Flask/Django API
+│   ├── ats_score.py                    # ATS parser & scoring logic
+│   ├── grammar_corrector.py           # NLP for correction
+│   ├── resume_enhancer.py             # Keyword enhancer
+│   ├── pdf_generator.py               # Form → PDF Resume
+│   └── job_matcher.py                 # Match job description ↔ resume
+│
+├── ml_model/
+│   ├── resume_classifier.pkl          # ML model for resume scoring
+│   └── vectorizer.pkl                 # TF-IDF or CountVectorizer
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   └── pages/
+│   │       └── ResumeForm.jsx         # Form-based input
+│   └── App.js
+│
+├── uploads/                           # Uploaded resumes
+├── templates/                         # For Flask, if using server-rendered forms
+├── static/                            # CSS, JS
+├── requirements.txt
+└── README.md
